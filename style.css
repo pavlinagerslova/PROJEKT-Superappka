@@ -21,6 +21,7 @@ body {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5;
+	font-family: "Source Sans Pro", sans-serif;;
 }
 
 .obal {
@@ -31,3 +32,169 @@ body {
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+/* .navigation
+{
+	width: 100%;
+} */
+
+.navigation-list
+{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0;
+}
+
+.navigation-list li
+{
+	width: 100%;
+	text-align: center;
+}
+
+.navigation-list li:first-child
+{
+	color: #25133d;
+	margin-bottom: 20px;
+}
+
+.navigation-list a
+{
+	font-size: 14px;
+	font-weight: 400;
+	color: black;
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px;
+	width: 100%;
+	border-bottom: 1px solid #4d4c4c;
+}
+
+.navigation-list a:hover,
+.navigation-list a:focus,
+.navigation-list a:active
+{
+	background-color: #48418e;
+	color: white;
+}
+
+.banner
+{
+	background-image: url(images/pozadi.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	margin-bottom: 50px;
+}
+
+.banner-text
+{
+	width: 100%;
+	text-align: center;
+}
+
+.banner-text h1
+{
+	font-size: 45px;
+	font-weight: 400;
+}
+
+.banner-text p
+{
+	font-size: 20px;
+}
+
+.banner-img-buttons
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.banner-img-buttons img
+{
+	width: 250px;
+}
+
+.banner-buttons
+{
+	display: flex;
+	flex-direction: column;
+	flex: 0 1 75%;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner-buttons a
+{
+	color: white;
+	font-size: 14px;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px;
+	width: 170px;
+	border: 1px solid white;
+	border-radius: 10px;
+	margin: 0 10px;
+}
+
+.banner-buttons a:first-of-type
+{
+	margin-bottom: 10px;
+}
+
+.banner-buttons a:hover,
+.banner-buttons a:focus,
+.banner-buttons a:active
+{
+	background-color: #48418e;
+}
+
+.content
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.function
+{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 340px;
+}
+
+.function img
+{
+	width: 50px;
+}
+
+.function h2
+{
+	color: #48418e;
+	font-size: 20px;
+	font-weight: 700;
+	margin: 10px 0;
+}
+
+.function p
+{
+	font-size: 14px;
+	font-weight: 300;
+	margin: 10px 0;
+}
+
+footer
+{
+	background-color: #48418e;
+	color: white;
+	text-align: center;
+}
