@@ -21,7 +21,6 @@ body {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5;
-	font-family: "Source Sans Pro", sans-serif;;
 }
 
 .obal {
@@ -45,6 +44,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	padding: 0;
+	margin: 0;
 }
 
 .navigation-list li
@@ -68,7 +68,7 @@ body {
 	text-decoration: none;
 	padding: 10px;
 	width: 100%;
-	border-bottom: 1px solid #4d4c4c;
+	border-bottom: 1px dotted #25133d;
 }
 
 .navigation-list a:hover,
@@ -89,44 +89,42 @@ body {
 	flex-direction: column;
 	align-items: center;
 	color: white;
-	margin-bottom: 50px;
+	text-shadow: 1px 1px 1px #0005;
+	margin: 0;
 }
 
 .banner-text
 {
 	width: 100%;
 	text-align: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/telefon.png);
+	background-position: right;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .banner-text h1
 {
 	font-size: 45px;
 	font-weight: 400;
+	margin: 10px;
 }
 
 .banner-text p
 {
 	font-size: 20px;
+	margin: 10px;
 }
 
-.banner-img-buttons
+.banner-img
 {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-}
-
-.banner-img-buttons img
-{
-	width: 250px;
+	display: none;
 }
 
 .banner-buttons
 {
 	display: flex;
 	flex-direction: column;
-	flex: 0 1 75%;
-	justify-content: center;
 	align-items: center;
 }
 
@@ -140,11 +138,6 @@ body {
 	width: 170px;
 	border: 1px solid white;
 	border-radius: 10px;
-	margin: 0 10px;
-}
-
-.banner-buttons a:first-of-type
-{
 	margin-bottom: 10px;
 }
 
@@ -160,6 +153,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin: 30px 0;
 }
 
 .function
@@ -197,4 +191,126 @@ footer
 	background-color: #48418e;
 	color: white;
 	text-align: center;
+}
+
+footer p
+{
+	margin: 0;
+	padding: 10px;
+}
+
+@media screen and (min-width: 1100px)
+{
+	.navigation-list
+	{
+		flex-direction: row;
+	}
+
+	.navigation-list li:first-child
+	{
+		margin-bottom: 0px;
+	}
+
+	.navigation-list li 
+	{
+		width: 150px;
+	}
+
+		.navigation-list a
+	{
+		border-bottom: none;
+	}
+
+		.banner
+	{
+		height: 430px;
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 0px;
+		text-shadow: none;
+	}
+
+	.banner-text
+	{
+		height: 100%;
+		background-image: none;
+		text-align: left;
+		margin-left: 20px;
+		width: 600px;
+	}
+
+	.banner-text h1
+	{
+		font-size: 90px;
+		margin: 0 0 20px 0;
+	}
+
+	.banner-text p
+	{
+		font-size: 36px;
+		margin: 0 0 40px 0;
+	}
+
+	.banner-img
+	{
+		height: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		width: 350px;
+	}
+
+	.banner-img img 
+	{
+		width: 100%;
+	}
+
+	.banner-buttons
+	{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin: 10px 0 0 0;
+	}
+
+	.banner-buttons a
+	{
+		width: 200px;
+		margin: 0;
+		font-size: 20px;
+	}
+
+	.banner-buttons a:first-of-type
+	{
+		margin-right: 20px;
+	}
+
+	.content
+	{
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.function
+	{
+		width: 250px;
+		margin: 0;
+	}
+
+	.function:nth-child(2)
+	{
+		margin: 0 30px;
+	}
+
+	.function p
+	{
+		font-size: 16px;
+		font-weight: 300;
+		margin: 10px 0;
+	}
+
+	footer 
+	{
+		font-size: 16px;
+	}
 }
